@@ -1,17 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Welcome to My Project</h1>
-    <p>This project starts as soon as the HTML file is opened!</p>
-    
-    <button onclick="sayHello()">Click Me</button>
-
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="assets/images/Arthrohard_logo TOP_vector.svg" />
+        <nav class="navigation">
+          <input type="checkbox" id="menuCheckbox" />
+          <label for="menuCheckbox" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="mobile-nav">
+            <li>DZIAŁANIE PREPARATU</li>
+            <li>ZALECENIA</li>
+            <li>SKŁAD</li>
+            <li>DAWKOWANIE</li>
+            <li>OPINIE</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <article class="lab-v-preparation-article">
+          <img
+            class="img-100percent-width"
+            src="assets/images/productTwoBottles.png"
+            alt="dwie butelki preparatu Arthrohard"
+          />
+          <h2>
+            Lab-V Arthrohard Preparat <br />
+            na wsparcie stawów dla psa i kota
+          </h2>
+          <p>
+            Arthrohard to dobrze przyswajalny suplement diety w formie syropu,
+            stworzony z myślą o zdrowiu stawów Twojego psa lub kota.
+          </p>
+        </article>
+        <h2 class="dividing-title">Co wyróżnia nasz preparat</h2>
+        <article class="common-article">
+          <div class="header-wrapper">
+            <h3>Innowacyjny dodatek - Czarciego Pazura</h3>
+          </div>
+          <p>
+            Zapewnia dodatkowe wsparcie w zwalczaniu stanów bólowych i
+            zapalnych. Skoncentrowane składniki aktywne, opracowane we
+            współpracy z lekarzami weterynarii, przynoszą szybkie i zauważalne
+            efekty, szczególnie korzystne dla zwierząt z poważnymi problemami
+            stawowymi.
+          </p>
+          <img
+            class="img-100percent-width"
+            src="assets/images/purpleFlower.png"
+            alt="Kwiat czarciego pazura"
+          />
+        </article>
+        <article class="list-article padding-bottom-70px">
+        <div class="header-wrapper">  <h3>Wygoda - dwa sposoby podawania</h3></div>
+          <section>
+            <ol>
+              <li>Bezpośrednio do pyszczka</li>
+              <li>Zmieszany z karmą</li>
+            </ol>
+          </section>
+          <div class="images-wrapper">
+            <img
+              src="assets/images/eatingDogFromHand.png"
+              alt="pies je z ręki"
+            />
+            <img
+              src="assets/images/eatingDogFromBowl.png"
+              alt="pies je z miski"
+            />
+          </div>
+        </article>
+        <article class="common-article no-border">
+          <h3>Skuteczność - skoncentrowana dawka</h3>
+          <p>
+            <b>Tylko jedna porcja dziennie.</b> To nie tylko wygoda, ale również
+            gwarancja, że Twoje zwierzę otrzymuje wszystko, czego potrzebuje,
+            aby cieszyć się zdrowiem i aktywnością na długo. Skorzystaj z zalet
+            Arthrohard i zobacz różnicę w komforcie życia swojego zwierzęcia.
+          </p>
+          <img
+            class="img-100percent-width"
+            src="assets/images/syringe.png"
+            alt="hypodermic syringe"
+          />
+        </article>
+        <h2 class="dividing-title">Działanie preparatu</h2>
+        <section>
+          <ol>
+            <li>Wsparcie rozwoju chrząstki stawowej</li>
+            <li>Działanie chondroprotekcyjne</li>
+            <li>Zmniejszenie stanu zapalnego i bólu</li>
+            <li>Wzmocnienie stawów</li>
+            <li>Ochrona przed mikrourazami</li>
+            <li>Regeneracja po urazach i zabiegach ortopedycznych</li>
+            <li>Poprawa jakości życia</li>
+          </ol>
+        </section>
+        <h2 class="dividing-title">Skład w 5 ml</h2>
+        <section id="ingredients">
+          <h4>Co dają poszczególne składniki:</h4>
+          <article>
+            <img src="assets/images/biotech.svg" />
+            <h2>Siarczan glukozaminy</h2>
+            <p>650 mg</p>
+            <p>
+              Glukozamina jest naturalnym składnikiem chrząstki. Dodatek
+              glukozaminy przyczynia się do zwiększenia produkcji
+              glikozaminoglikanów (m.in. siarczanu keratanu, heparanu, kwasu
+              hialuronowego), które pomagają w odbudowie chrząstki, co jest
+              szczególnie korzystne dla zwierząt ze zmianami zwyrodnieniowymi
+              stawów.
+            </p>
+          </article>
+          <article>
+            <img src="assets/images/grass.svg" />
+            <h2>Czarci pazur</h2>
+            <p>250 mg</p>
+            <p>
+              Czarci pazur jest rośliną, która ma właściwości przeciwzapalne i
+              przeciwbólowe. Może to pomóc zwierzętom, które doświadczają bólu i
+              stanu zapalnego związanego z problemami ze stawami.
+            </p>
+          </article>
+          <article>
+            <img src="assets/images/biotech.svg" />
+            <h2>Siarczan chondroityny</h2>
+            <p>300 mg</p>
+            <p>
+              Chondroityna, podobnie jak glukozamina, jest składnikiem
+              chrząstki. Chondroityna pomaga zwalczać enzymy, które niszczą
+              chrząstkę, a także pomaga chrząstce zatrzymać wodę, co jest ważne
+              dla jej sprężystości i absorpcji wstrząsów.
+            </p>
+          </article>
+          <article>
+            <img src="assets/images/cPlusPlus.svg" />
+            <h2>Witamina C</h2>
+            <p>50 mg</p>
+            <p>
+              Witamina C jest potężnym przeciwutleniaczem, który może pomóc w
+              ochronie stawów poprzez neutralizację wolnych rodników, które mogą
+              uszkadzać chrząstkę. Ponadto, witamina C odgrywa ważną rolę w
+              produkcji kolagenu, kluczowego składnika chrząstki.
+            </p>
+          </article>
+          <article>
+            <img src="assets/images/device_hub.svg" />
+            <h2>MSM</h2>
+            <p>250 mg</p>
+            <p>
+              Metylosulfonylometan, czyli MSM, to naturalny związek siarki,
+              który pomaga w utrzymaniu zdrowych stawów poprzez zmniejszenie
+              stanu zapalnego i bólu. MSM może również pomagać w produkcji
+              kolagenu, co przyczynia się do zdrowia chrząstki stawowej.
+            </p>
+          </article>
+          <article>
+            <img src="assets/images/opacity.svg" />
+            <h2>Syrop glukozowo - fruktozowy</h2>
+            <p>250 mg</p>
+          </article>
+        </section>
+        <img
+          class="img-100percent-width"
+          src="assets/images/productPhoto.png"
+          alt="product photo"
+        />
+        <img
+          class="img-100vw"
+          src="assets/images/dogPhoto.png"
+          alt="dog photo"
+        />
+        <section>
+          <div>
+            <label for="productsQuantity">liczba produktów na stronie</label>
+            <select name="productsQuantity" id="productsQuantity">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="50">50</option>
+            </select>
+          </div>
+        </section>
+        <div id="productsContainer"></div>
+      </main>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
